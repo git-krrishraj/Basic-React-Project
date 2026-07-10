@@ -88,8 +88,8 @@ function App() {
   ];
   return <div className='parent'>
     {
-      profiles.map(function (user,idx) {
-        return <Card info={user} key={idx}/>
+      profiles.map(function (user) {
+        return <Card info={user} key={user.id}/>
       })
     }
   </div>
